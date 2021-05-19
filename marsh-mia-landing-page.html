@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Marsh India | Global Leader in Insurance Broking and Risk Management</title>
+    <link rel="icon" href="image/marsh-favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> -->
+
+    <script>setTimeout(function () { var e, t; e = document, (t = e.createElement("script")).type = "text/javascript", t.async = !0, t.setAttribute("data-botid", "JjV98lo_w02q"), t.src = "https://botbuilder.engagely.ai/engagelyscripts/engagely_bots.js?v=" + Date.parse(new Date()), e.getElementsByTagName("body")[0].appendChild(t) }, 1000);</script>
+
+
+    <style>
+        .form-control {
+            height: 35px !important;
+        }
+
+        .noCursor {
+            cursor: not-allowed;
+        }
+
+        .curPointer {
+            cursor: pointer;
+        }
+
+        .fs-11 {
+            font-size: 11px !important;
+        }
+
+        .fs-12 {
+            font-size: 12px !important;
+        }
+
+        .fs-13 {
+            font-size: 13px !important;
+        }
+
+        .fs-14 {
+            font-size: 14px !important;
+        }
+
+        .fs-16 {
+            font-size: 16px !important;
+        }
+
+        .fs-18 {
+            font-size: 18px !important;
+        }
+
+        .fs-20 {
+            font-size: 20px !important;
+        }
+
+        .label-danger {
+            color: red;
+        }
+
+        .form-control:focus {
+            box-shadow: none !important;
+        }
+
+        .w-40 {
+            width: 40% !important;
+        }
+
+        .w-60 {
+            width: 60% !important;
+        }
+
+        .w-80 {
+            width: 80% !important;
+        }
+
+        .text-colour {
+            color: #002C77;
+        }
+
+        .background-colour {
+            background-color: #002C77;
+        }
+
+        /* .quicksand-font {
+            font-family: "Quicksand", sans-serif;
+        } */
+
+        .mulish-font {
+            font-family: "Mulish", sans-serif !important;
+        }
+
+        .grey-text-color {
+            color: #7D7987;
+        }
+
+        p.card-text {
+            margin-bottom: 5px !important;
+        }
+
+        .height-vh {
+            height: 100vh;
+        }
+
+        hr {
+            width: 100px !important;
+            border-top: 3px solid rgba(0, 0, 0) !important;
+            margin-top: 1rem !important;
+            margin-bottom: 1rem !important;
+        }
+
+        .card {
+            border-radius: 20px !important;
+        }
+
+        .second-page-display {
+            /* display: flex; */
+            margin: 0px 10rem;
+        }
+
+        .third-page-display {
+            /* display: flex; */
+            margin: 0px 8rem;
+        }
+
+        .second-part {
+            background-color: #F2F2F2;
+            /* margin-bottom: 1rem; */
+            /* background   : url("https://botbuilder.engagely.ai/dmp_backend/blue-left-landing.png"); */
+            /* back */
+        }
+
+        /* .left-img {
+            position: absolute;
+        }
+
+        .left-img img {
+            width: 80%;
+        } */
+
+        /* .right-img {
+            position: absolute;
+            right: 0%;
+            top: 255%;
+            z-index: -1;
+        }
+
+
+        .right-img img {
+            width: auto;
+            height: 40rem;
+
+        } */
+
+        .third-part {
+            margin-bottom: 1rem;
+            /* background: url("https://botbuilder.engagely.ai/dmp_backend/blue-left-landing.png"); */
+        }
+
+        .third-card-border {
+            border: 1px solid #002C77;
+
+        }
+
+        .third-card {
+            /* padding: 1rem !important; */
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .responsive-margin {
+            margin-top: 1.5rem;
+        }
+
+        .card-img-top {
+            border-top-left-radius: 10px !important;
+            border-top-right-radius: 10px !important;
+        }
+
+        .dot-icon {
+            position: absolute;
+            left: 0;
+        }
+
+        .arrow-bg {
+            background: #002C77;
+            border-radius: 3px;
+        }
+
+        .arrow-bg .fa {
+            color: white;
+            transform: rotate(45deg);
+            padding: 4px 2px 4px 4px;
+        }
+
+        .card-headtext-one {
+            position: absolute;
+            /* padding: 1rem; */
+            top: 30%;
+            width: 75%;
+            line-height: 40px;
+        }
+
+        .card-headtext-two {
+            position: absolute;
+            /* padding: 1rem; */
+            top: 25%;
+            width: 75%;
+            line-height: 40px;
+        }
+
+        .forth-part {
+            background-color: #F2F2F2;
+        }
+
+        .fifth-part {
+            background-color: #828282;
+            color: #F2F2F2;
+        }
+
+        .advantage-card {
+            /* width: 80%; */
+            font-size: 22px !important;
+            line-height: 30px;
+            border: 1px solid #002C77;
+        }
+
+        .advantage-card .card-body {
+            padding: 1.5rem !important;
+        }
+
+        /* // Extra large devices (large desktops, 1200px and up) */
+        @media (max-width: 1360px) {
+            .card-body {
+                min-height: 275px !important;
+            }
+
+            .card-body.third-card {
+                min-height: 135px !important;
+            }
+
+            /* .right-img {
+                top: 300%;
+            } */
+
+            .w-60 {
+                width: 100% !important;
+            }
+
+            .third-page-display {
+                /* display: flex; */
+                margin: 0px 0rem;
+            }
+
+            .second-page-display {
+                margin: 0px 0rem;
+            }
+
+            /* .card-headtext-one {
+                top: 25%;
+            }
+
+            .card-headtext-two {
+                top: 20%;
+            } */
+        }
+
+        @media (max-width: 1100px) {
+            .card-body {
+                min-height: 275px !important;
+            }
+
+            .card-headtext-one {
+                top: 25%;
+            }
+
+            .card-headtext-two {
+                top: 20%;
+            }
+
+
+            /* .second-page-display {
+                margin: 0px 1rem;
+            } */
+
+        }
+
+        @media (max-width: 991px) {
+            .card-headtext-two.mobile-change {
+                /* top: 25% !important; */
+                width: 50%;
+            }
+
+            .card-headtext-two,
+            .card-headtext-one {
+                width: 50%;
+                top: 40%
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            /* .card-headtext-two.mobile-change {
+                top: 30% !important;
+            } */
+
+            .card-headtext-two.mobile-change,
+            .card-headtext-one {
+                width: 75%;
+                top: 30%
+            }
+
+            .card-headtext-two {
+                width: 75%;
+                top: 25%
+            }
+
+
+        }
+
+        @media (max-width: 575px) {
+            .card-body {
+                min-height: 1px !important;
+            }
+
+            .w-60 {
+                width: 100% !important;
+            }
+
+            .responsive-margin {
+                margin-top: 1.5rem;
+            }
+
+            /* .fa-arrow-right.rotate-arrow {
+                transform: rotate(90deg);
+            } */
+
+            .second-page-display,
+            .third-page-display {
+                flex-direction: column;
+                margin: 0px 0rem;
+            }
+
+            /* .card-headtext-one {
+                top: 30%;
+            } */
+
+            .card-headtext-two.mobile-change {
+                top: 30% !important;
+            }
+
+            .mobile-family-font {
+                font-size: 25px !important;
+                line-height: 25px !important;
+                margin-top: 1.5rem !important;
+            }
+
+            .mobile-bot-font {
+                font-size: 20px !important;
+                line-height: 25px !important;
+                margin-top: 1.8rem !important;
+            }
+
+            .marsh-logo {
+                width: 50%;
+            }
+
+            .first-part {
+                padding: 2.5rem !important;
+            }
+
+            .first-part .bannner-div {
+                margin-top: -10px !important;
+                text-align: center;
+            }
+
+            .first-part .bannner-div img {
+                width: 70% !important;
+            }
+
+            .first-part .card .card-body .fs-18 {
+                font-size: 20px !important;
+            }
+
+            .first-part .card .card-body .fs-14 {
+                font-size: 16px !important;
+            }
+
+            .second-part {
+                margin-bottom: 0rem;
+            }
+
+            .second-part .why-insurance {
+                line-height: 40px !important;
+            }
+
+            .third-part {
+                margin-bottom: 0rem;
+            }
+
+            .third-part .more-about-marsh {
+                line-height: 40px !important;
+            }
+
+            .forth-part .text-size {
+                font-size: 16px !important;
+                line-height: 28px !important;
+            }
+
+            .fifth-part .text-size {
+                font-size: 14px !important;
+                line-height: 20px !important;
+            }
+
+            /* .advantage-card {
+                width: 100%;
+            } */
+        }
+
+        /* // Small devices (landscape phones, 576px and up) */
+        @media (max-width: 400px) {
+            .w-60 {
+                width: 100% !important;
+            }
+
+            .w-75 {
+                width: 100% !important;
+            }
+
+            .card-headtext-two.mobile-change {
+                top: 20% !important;
+                width: 80%;
+            }
+
+            .card-headtext-one {
+                width: 95%;
+                top: 20%
+            }
+
+            .card-headtext-two {
+                width: 80%;
+                top: 15%
+            }
+
+
+        }
+
+        /* @media (min-width: 420px) {
+            .w-60 {
+                width: 85% !important;
+            }
+        } */
+
+        @media (max-width: 320px) {
+            .w-75 {
+                width: 100% !important;
+            }
+
+            .card-headtext-two.mobile-change {
+                top: 15% !important;
+                width: 100%;
+            }
+
+            .card-headtext-one {
+                width: 100%;
+                top: 15%
+            }
+
+            .card-headtext-two {
+                width: 100%;
+                top: 10%
+            }
+        }
+    </style>
+</head>
+
+<body class="mulish-font">
+    <div>
+        <div class="mulish-font h-auto first-part" style="padding: 2.5rem 2.5rem 5rem">
+            <div class="row">
+                <img class="img-fluid dot-icon d-xl-block d-lg-block d-md-block d-sm-block d-none"
+                    src="image/dots_icon.svg" alt="">
+                <div class="col-xl-1 col-xl-1 col-md-1"></div>
+                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 bannner-div">
+                    <img class="img-fluid" src="image/banner-img.svg" alt="">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <p class="text-colour mulish-font mt-5 mobile-family-font"
+                        style="font-size: 36px; line-height: 42px; font-weight: 700;">Specially curated products for you
+                        & your family, that complement your company-provided cover</p>
+                    <p class="mulish-font my-4 font-weight-bold mobile-bot-font"
+                        style="font-size: 25px; line-height: 26px;">
+                        <span class="arrow-bg"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Click or tap
+                        on the MIA bot icon on the bottom right of your screen to begin your insurance journey
+                    </p>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card d-flex flex-column h-100 justify-content-center">
+                                <div class="card-body d-flex w-100 mt-auto flex-column">
+                                    <div style="height: 70px;">
+                                        <img class="img-fluid " src="image/health-icon.svg" alt="Health Insurance">
+                                    </div>
+                                    <div class="card-title font-weight-bold fs-18 text-colour "
+                                        style="line-height: 34px;">Health insurance plans
+                                        by</div>
+                                    <div style="line-height: 17px;">
+                                        <p class="card-text fs-14 font-weight-bold">Care Health Insurance</p>
+                                        <p class="card-text fs-14 font-weight-bold">SBI General Insurance</p>
+                                        <p class="card-text fs-14 font-weight-bold">Bajaj Allianz General Insurance</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card d-flex flex-column h-100 justify-content-center">
+                                <div class="card-body d-flex w-100 mt-auto flex-column">
+                                    <div style="height: 70px;">
+                                        <img class="img-fluid " src="image/topup-icon.svg" alt="Top-up Plans">
+                                    </div>
+                                    <div class="card-title font-weight-bold fs-18 text-colour "
+                                        style="line-height: 34px;">Top Up Insurance plans
+                                        by</div>
+                                    <div style="line-height: 17px;">
+                                        <p class="card-text fs-14 font-weight-bold">ManipalCigna Health Insurance</p>
+                                        <p class="card-text fs-14 font-weight-bold">Bajaj Allianz General Insurance</p>
+                                    </div>
+                                    <!-- <p class="card-text fs-13 grey-text-color">Health Guard (Bajaj Allianz)</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 h-auto responsive-margin">
+                            <div class="card d-flex flex-column h-100 justify-content-center">
+                                <div class="card-body d-flex w-100 mt-auto flex-column">
+                                    <div style="height: 70px;">
+                                        <img class="img-fluid "
+                                            src="https://botbuilder.engagely.ai/dmp_backend/Marsh_4.png" alt="Covid-19 Insurance">
+                                    </div>
+                                    <div class="card-title font-weight-bold fs-16">Covid-19 Insurance</div>
+                                    <p class="card-text fs-13 grey-text-color">Corona Rakshak (IFFCO-Tokio)</p>
+                                    <p class="card-text fs-13 grey-text-color">Corona Kavach (IFFCO-Tokio/Cigna)</p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="float-right quicksand-font text-colour font-weight-bold pt-2"
+                                style="font-size: 20px;">
+                                + more
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="second-part mulish-font">
+            <!-- <div class="left-img">
+                <img src="https://botbuilder.engagely.ai/dmp_backend/blue-left-landing.png" alt="">
+            </div> -->
+            <div class="" style="padding: 2.5rem">
+                <div class="text-center">
+                    <p class="mulish-font text-colour why-insurance font-weight-bold"
+                        style="font-size: 36px; line-height: 56px;">
+                        Why do you need
+                        additional insurance?
+                    </p>
+                    <hr>
+                    <div class="mx-auto w-60 ">
+                        <p class="" style="font-size: 25px; line-height: 30px;">
+                            How does your personal insurance complement your already existing employer-sponsored cover?
+                        </p>
+                    </div>
+                </div>
+                <div class="second-page-display">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card d-flex mx-auto h-100 advantage-card">
+                                <div class="card-body d-flex w-100 mt-auto flex-column">
+                                    <div class="pb-2">
+                                        <img width="81" src="image/policy_icon.svg" alt="">
+                                    </div>
+                                    <p class="card-title font-weight-bold mb-0"><span class="text-colour">Continue
+                                            policy</span> as long as you want even after exiting the company</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card d-flex mx-auto h-100 advantage-card">
+                                <div class="card-body d-flex w-100 mt-auto flex-column">
+                                    <div class="pb-2">
+                                        <img width="81" src="image/flexibility_icon.svg" alt="">
+                                    </div>
+                                    <p class="card-title font-weight-bold mb-0"><span
+                                            class="text-colour">Flexibility</span>
+                                        to choose who to cover & buy the policy as you want
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card d-flex mx-auto h-100 advantage-card">
+                                <div class="card-body d-flex w-100 mt-auto flex-column">
+                                    <div class="pb-2">
+                                        <img width="81" src="image/premium_icon.svg" alt="">
+                                    </div>
+                                    <p class="card-title font-weight-bold mb-0">Pay premium directly & <span
+                                            class="text-colour">save
+                                            tax</span> as per as per Income Tax Act &
+                                        Rules</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div>
+
+
+                    <div class="row"> -->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card d-flex mx-auto h-100 advantage-card">
+                                <div class="card-body d-flex w-100 mt-auto flex-column">
+                                    <div class="pb-2">
+                                        <img width="81" src="image/cost_icon.svg" alt="">
+                                    </div>
+                                    <p class="card-title font-weight-bold mb-0">Beat the <span
+                                            class="text-colour">rising
+                                            cost</span> of
+                                        medical treatments in the new normal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card d-flex mx-auto h-100 advantage-card">
+                                <div class="card-body d-flex w-100 mt-auto flex-column">
+                                    <div class="pb-2">
+                                        <img width="81" src="image/medical_icon.svg" alt="">
+                                    </div>
+                                    <p class="card-title font-weight-bold mb-0">Advantage of getting policy <span
+                                            class="text-colour">without
+                                            medical test</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card d-flex mx-auto h-100 advantage-card">
+                                <div class="card-body d-flex w-100 mt-auto flex-column">
+                                    <div class="pb-2">
+                                        <img width="81" src="image/support_icon.svg" alt="">
+                                    </div>
+                                    <p class="card-title font-weight-bold mb-0"><span class="text-colour">Dedicated
+                                            end-to-end support</span> from policy purchase to claims</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="third-part  mulish-font">
+            <!-- <div class="right-img">
+                <img src="https://botbuilder.engagely.ai/dmp_backend/blue-right-landing.png" alt="">
+            </div> -->
+            <div class="" style="padding: 2.5rem">
+                <div class="text-center">
+                    <p class="mulish-font text-colour font-weight-bold more-about-marsh"
+                        style="font-size: 36px; line-height: 56px;">Know
+                        More About the
+                        "Marsh Advantage"
+                    </p>
+                    <hr>
+                    <div class="mx-auto w-60">
+                        <p style="font-size: 25px; line-height: 30px;">
+                            Stay covered and stay protected with Marsh. Our insurance experts will help you select the
+                            best voluntary insurance plans in the market.
+                        </p>
+                    </div>
+                </div>
+                <div class="third-page-display">
+
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card border-0 d-flex flex-column h-100 justify-content-center">
+                                <div
+                                    class="card-body text-center d-flex w-100 justify-content-center mt-auto flex-column">
+                                    <img class="mx-auto" src="image/advantagecup.svg" class="">
+                                    <div class="font-weight-bold mx-auto w-75 pt-3"
+                                        style="font-size: 35px; line-height: 40px;">
+                                        Your Advantage,<br> <span class="text-colour">Marsh Advantage</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card third-card-border d-flex flex-column h-100 justify-content-center">
+                                <img src="image/righthere-img.svg" class="card-img-top img-fluid"
+                                    alt="Top-up plans for Family">
+                                <span class="card-title text-colour card-headtext-one pr-3 py-3 pl-4 font-weight-bold"
+                                    style="font-size: 35px;">Right
+                                    here, Right now</span>
+                                <div class="card-body  third-card pr-3 py-3 pl-4 d-flex w-100  mt-auto flex-column">
+                                    <p class="card-text" style="font-size:22px; line-height: 25px;">We
+                                        will help you in choosing the right product, decode the policy terms &
+                                        conditions & assist in buying the policy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card third-card-border d-flex flex-column h-100 justify-content-center">
+                                <img src="image/renewenjoy-img.svg" class="card-img-top img-fluid"
+                                    alt="Covid Insurance">
+                                <span class="card-title text-colour card-headtext-one pr-3 py-3 pl-4 font-weight-bold"
+                                    style="font-size: 35px;">Renew &
+                                    Enjoy</span>
+                                <div class="card-body  third-card pr-3 py-3 pl-4 d-flex w-100 mt-auto flex-column">
+                                    <p class="card-text" style="font-size:22px; line-height: 25px;">We
+                                        will connect with you via call/e-mail for renewal of your policy & help you
+                                        continue the benefits</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div>
+
+
+                    <div class="row"> -->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card third-card-border d-flex flex-column h-100 justify-content-center">
+                                <img src="image/changeOkay.svg" class="card-img-top img-fluid"
+                                    alt="Top-up plans for Family">
+                                <span
+                                    class="card-title text-colour card-headtext-two pr-3 py-3 pl-4 font-weight-bold mobile-change"
+                                    style="font-size: 35px;">Change
+                                    is okay</span>
+                                <div class="card-body  third-card pr-3 py-3 pl-4 d-flex w-100  mt-auto flex-column">
+                                    <p class="card-text" style="font-size:22px; line-height: 25px;">We
+                                        will be available for you in case you need to make any changes or rectifications
+                                        in the policy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card third-card-border d-flex flex-column h-100 justify-content-center">
+                                <img src="image/unhappyHappy.svg" class="card-img-top img-fluid"
+                                    alt="Top-up plans for Family">
+                                <span class="card-title text-colour card-headtext-two pr-3 py-3 pl-4 font-weight-bold"
+                                    style="font-size: 35px;">Unhappy
+                                    to Happy </span>
+                                <div class="card-body  third-card pr-3 py-3 pl-4 d-flex w-100  mt-auto flex-column">
+                                    <p class="card-text" style="font-size:22px; line-height: 25px;">
+                                        While there will be no reason to complain, in case you are unhappy about
+                                        anything, we will handle the escalations/complaints related to services or any
+                                        other aspect related to your policy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
+                            <div class="card third-card-border d-flex flex-column h-100 justify-content-center">
+                                <img src="image/holdhand.svg" class="card-img-top img-fluid"
+                                    alt="Top-up plans for Family">
+                                <span class="card-title text-colour card-headtext-two pr-3 py-3 pl-4 font-weight-bold"
+                                    style="font-size: 35px;">Hold
+                                    your Hand</span>
+                                <div class="card-body  third-card pr-3 py-3 pl-4 d-flex w-100  mt-auto flex-column">
+                                    <p class="card-text" style="font-size:22px; line-height: 25px;">We
+                                        will guide you/your family through the every step of the claim process. You will
+                                        get contact details of Marsh representative who will assist end to end from
+                                        Diagnosis to Recovery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="forth-part mulish-font " style="padding: 2.5rem 0px">
+            <div class="container">
+                <div class="mb-4 img-div">
+                    <img class="marsh-logo" src="image/marsh-logo.svg" alt="">
+                </div>
+                <div class="text-size" style="font-size: 21px; line-height: 35px; font-weight: 400;">
+                    A global leader in insurance broking and innovative risk management solutions, Marsh's 30,000
+                    colleagues advise individual and commercial clients of all sizes in over 130 countries. Marsh is a
+                    wholly owned subsidiary of Marsh & McLennan Companies (NYSE: MMC), the leading global professional
+                    services firm in the areas of risk, strategy and people. With annual revenue over US$14 billion and
+                    nearly 65,000 colleagues worldwide, MMC helps clients navigate an increasingly dynamic and complex
+                    environment through four market-leading firms. In addition to Marsh, MMC is the parent company of
+                    Guy Carpenter, Mercer, and Oliver Wyman.
+                </div>
+            </div>
+        </div>
+
+        <div class="fifth-part mulish-font" style="padding: 2.5rem 0px">
+            <div class="container">
+                <!-- <div class="my-5">
+                    <img src="image/marsh-logo.svg" alt="">
+                </div> -->
+                <div class="text-size" style="font-size: 16px; line-height: 22px; font-weight: 400;">
+                    <p>
+                        <span class="font-weight-bold pr-1">Disclaimer</span>: Marsh India Insurance Brokers Pvt Ltd is
+                        a
+                        joint venture between Marsh International
+                        Holdings Inc. and its Indian partners. Marsh is one of the Marsh & McLennan Companies, together
+                        with Guy Carpenter, Mercer and Oliver Wyman. This document is not intended to be taken as advice
+                        regarding any individual situation and should not be relied upon as such. The information
+                        contained herein is based on sources we believe reliable, but we make no representation or
+                        warranty as to its accuracy.
+                    </p>
+                    <p>
+                        Marsh shall have no obligation to update this publication and shall have no liability to you or
+                        any other party arising out of this publication or any matter contained herein. Any modeling,
+                        analytics, or projections are subject to inherent uncertainty, and the Marsh Analysis could be
+                        materially affected if any underlying assumptions, conditions, information, or factors are
+                        inaccurate or incomplete or should change. Insurance is the subject matter of the solicitation.
+                        For more details on risk factors, terms and conditions please read sales brochure carefully
+                        before concluding a sale.
+                    </p>
+                    <p>
+                        Prohibition of Rebates - Section 41 of the Insurance Act, 1938; as amended from time to time: No
+                        person shall allow or offer to allow, either directly or indirectly, as an inducement to any
+                        person to take or renew or continue an insurance in respect of any kind of risk relating to
+                        lives or property in India, any rebate of the whole or part of the commission payable or any
+                        rebate of the premium shown on the policy, nor shall any person taking out or renewing or
+                        continuing a policy accept any rebate, except such rebate as may be allowed in accordance with
+                        the published prospectuses or tables of the insurer. Any person making default in complying with
+                        the provisions of this section shall be punishable with a fine which may extend to ten lakh
+                        rupees.
+                    </p>
+                    <p>
+                        Marsh India Insurance Brokers Pvt. Ltd's corporate and the registered office is at 1201-02,
+                        Tower 2, One World Centre, Jupiter Mills Compound, Senapati Bapat Marg, Elphinstone Road (W),
+                        Mumbai 400013. Marsh India Insurance Brokers Pvt. Ltd is registered as composite broker with
+                        Insurance and Regulatory Development Authority of India (IRDAI). Its license no. is 120 and is
+                        valid from 03/03/2021 to 02/03/2024. CIN: U66010MH2002PTC138276.
+                    </p>
+                    <p class="mb-0">
+                        Copyright 2018 Marsh India Insurance Brokers Pvt Ltd. All rights reserved.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
