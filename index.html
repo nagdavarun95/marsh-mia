@@ -12,11 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> -->
-
-    <script>setTimeout(function () { var e, t; e = document, (t = e.createElement("script")).type = "text/javascript", t.async = !0, t.setAttribute("data-botid", "JjV98lo_w02q"), t.src = "https://botbuilder.engagely.ai/engagelyscripts/engagely_bots.js?v=" + Date.parse(new Date()), e.getElementsByTagName("body")[0].appendChild(t) }, 1000);</script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 
     <style>
         .form-control {
@@ -91,8 +87,8 @@
             font-family: "Quicksand", sans-serif;
         } */
 
-        .mulish-font {
-            font-family: "Mulish", sans-serif !important;
+        .custom-family-font {
+            font-family: "Noto Sans", sans-serif !important;
         }
 
         .grey-text-color {
@@ -118,48 +114,12 @@
             border-radius: 20px !important;
         }
 
-        .second-page-display {
-            /* display: flex; */
-            margin: 0px 10rem;
-        }
-
-        .third-page-display {
-            /* display: flex; */
-            margin: 0px 8rem;
-        }
-
         .second-part {
             background-color: #F2F2F2;
-            /* margin-bottom: 1rem; */
-            /* background   : url("https://botbuilder.engagely.ai/dmp_backend/blue-left-landing.png"); */
-            /* back */
         }
-
-        /* .left-img {
-            position: absolute;
-        }
-
-        .left-img img {
-            width: 80%;
-        } */
-
-        /* .right-img {
-            position: absolute;
-            right: 0%;
-            top: 255%;
-            z-index: -1;
-        }
-
-
-        .right-img img {
-            width: auto;
-            height: 40rem;
-
-        } */
 
         .third-part {
             margin-bottom: 1rem;
-            /* background: url("https://botbuilder.engagely.ai/dmp_backend/blue-left-landing.png"); */
         }
 
         .third-card-border {
@@ -168,7 +128,6 @@
         }
 
         .third-card {
-            /* padding: 1rem !important; */
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
         }
@@ -182,20 +141,8 @@
             border-top-right-radius: 10px !important;
         }
 
-        .dot-icon {
-            position: absolute;
-            left: 0;
-        }
-
-        .arrow-bg {
-            background: #002C77;
-            border-radius: 3px;
-        }
-
         .arrow-bg .fa {
-            color: white;
             transform: rotate(45deg);
-            padding: 4px 2px 4px 4px;
         }
 
         .card-headtext-one {
@@ -237,7 +184,7 @@
         /* // Extra large devices (large desktops, 1200px and up) */
         @media (max-width: 1360px) {
             .card-body {
-                min-height: 275px !important;
+                min-height: 1px !important;
             }
 
             .card-body.third-card {
@@ -272,15 +219,16 @@
 
         @media (max-width: 1100px) {
             .card-body {
-                min-height: 275px !important;
+                min-height: 1px !important;
             }
 
             .card-headtext-one {
-                top: 25%;
+                top: 20%;
+                width: 80%;
             }
 
             .card-headtext-two {
-                top: 20%;
+                top: 15%;
             }
 
 
@@ -293,13 +241,13 @@
         @media (max-width: 991px) {
             .card-headtext-two.mobile-change {
                 /* top: 25% !important; */
-                width: 50%;
+                width: 55%;
             }
 
             .card-headtext-two,
             .card-headtext-one {
-                width: 50%;
-                top: 40%
+                width: 70%;
+                /* top: 40% */
             }
         }
 
@@ -355,15 +303,16 @@
             }
 
             .mobile-family-font {
-                font-size: 25px !important;
+                font-size: 23px !important;
                 line-height: 25px !important;
-                margin-top: 1.5rem !important;
+                margin-top: 1rem !important;
             }
 
             .mobile-bot-font {
                 font-size: 20px !important;
                 line-height: 25px !important;
-                margin-top: 1.8rem !important;
+                margin-top: 1rem !important;
+                margin-bottom: 0rem !important;
             }
 
             .marsh-logo {
@@ -371,11 +320,11 @@
             }
 
             .first-part {
-                padding: 2.5rem !important;
+                padding: 1rem !important;
             }
 
             .first-part .bannner-div {
-                margin-top: -10px !important;
+                margin-top: 0px !important;
                 text-align: center;
             }
 
@@ -393,25 +342,96 @@
 
             .second-part {
                 margin-bottom: 0rem;
+                padding: 1rem !important;
             }
 
             .second-part .why-insurance {
-                font-size: 30px !important;
-                line-height: 40px !important;
+                font-size: 23px !important;
+                line-height: 30px !important;
+            }
+
+            .second-part .why-insurance-text {
+                font-size: 16px !important;
+                line-height: 20px !important;
+                margin-bottom: 0px !important;
+            }
+
+            .second-part .advantage-card .card-body.flex-column {
+                flex-direction: row !important;
+                padding: 1rem !important;
+            }
+
+            .second-part .advantage-card .card-body .pb-2 {
+                padding-bottom: 0px !important;
+            }
+
+            .second-part .advantage-card .card-body img {
+                width: 45px;
+                margin-right: 15px;
+            }
+
+            .second-part .advantage-card .card-body p.card-title {
+                font-size: 13px;
+                line-height: 16px;
+                margin: auto 0px !important;
             }
 
             .third-part {
                 margin-bottom: 0rem;
+                padding: 1rem !important;
             }
 
             .third-part .more-about-marsh {
-                font-size: 28px !important;
-                line-height: 40px !important;
+                font-size: 26px !important;
+                line-height: 35px !important;
             }
 
+            .third-part .more-about-marsh-text {
+                font-size: 15px !important;
+                line-height: 20px !important;
+                margin-bottom: 0px !important;
+            }
+
+            .third-part .third-page-display .card-body.flex-column.advantage-card-marsh {
+                flex-direction: row !important;
+                padding: 0.5rem 3rem 0.5rem 3rem !important;
+            }
+
+
+            .third-part .third-page-display .card-body img {
+                width: 50px;
+            }
+
+            .third-part .third-page-display .card-body .advantage-marsh-text {
+                font-size: 20px !important;
+                line-height: 26px !important;
+                padding-top: 0px !important;
+            }
+
+            .third-part .third-page-display .card-title .card-headtext-one {
+                font-size: 26px !important;
+                line-height: 29px !important;
+            }
+
+            .third-part .third-page-display .card-title.card-headtext-one,
+            .third-part .third-page-display .card-title.card-headtext-two {
+                font-size: 26px !important;
+                line-height: 29px !important;
+            }
+
+            .third-part .third-page-display .card-body.third-card .card-text {
+                font-size: 15px !important;
+                line-height: 20px !important;
+            }
+
+            .third-part .third-page-display .card-body {
+                min-height: 1px !important;
+            }
+
+
             .forth-part .text-size {
-                font-size: 16px !important;
-                line-height: 28px !important;
+                font-size: 14px !important;
+                line-height: 22px !important;
             }
 
             .fifth-part .text-size {
@@ -435,18 +455,18 @@
             }
 
             .card-headtext-two.mobile-change {
-                top: 20% !important;
-                width: 80%;
+                top: 40% !important;
+                width: 60%;
             }
 
             .card-headtext-one {
-                width: 95%;
-                top: 20%
+                width: 60%;
+                top: 40%
             }
 
             .card-headtext-two {
-                width: 80%;
-                top: 15%
+                width: 60%;
+                top: 35%
             }
 
 
@@ -481,23 +501,25 @@
     </style>
 </head>
 
-<body class="mulish-font">
+<body class="custom-family-font">
     <div>
-        <div class="mulish-font h-auto first-part" style="padding: 2.5rem 2.5rem 5rem">
+        <div class="container custom-family-font h-auto first-part" style="padding: 2.5rem 0rem 5rem 0">
             <div class="row">
-                <img class="img-fluid dot-icon d-xl-block d-lg-block d-md-block d-sm-block d-none"
-                    src="image/dots_icon.svg" alt="">
-                <div class="col-xl-1 col-xl-1 col-md-1"></div>
-                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 bannner-div">
+                <!-- <img class="img-fluid dot-icon d-xl-block d-lg-block d-md-block d-sm-block d-none"
+                    src="image/dots_icon.svg" alt=""> -->
+                <!-- <div class="col-xl-1 col-xl-1 col-md-1"></div> -->
+                <div
+                    class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 bannner-div mt-5 text-xl-right text-lg-right text-md-center">
                     <img class="img-fluid" src="image/banner-img.svg" alt="">
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                    <p class="text-colour mulish-font mt-5 mobile-family-font"
+                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                    <p class="text-colour custom-family-font mt-5 mobile-family-font"
                         style="font-size: 36px; line-height: 42px; font-weight: 700;">Specially curated products for you
                         & your family, that complement your company-provided cover</p>
-                    <p class="mulish-font my-4 font-weight-bold mobile-bot-font"
+                    <p class="custom-family-font my-4 font-weight-bold mobile-bot-font"
                         style="font-size: 25px; line-height: 26px;">
-                        <span class="arrow-bg"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Click or tap
+                        <span class="arrow-bg"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Click
+                        or tap
                         on the MIA bot icon on the bottom right of your screen to begin your insurance journey
                     </p>
                     <div class="row">
@@ -559,21 +581,17 @@
             </div>
         </div>
 
-
-        <div class="second-part mulish-font">
-            <!-- <div class="left-img">
-                <img src="https://botbuilder.engagely.ai/dmp_backend/blue-left-landing.png" alt="">
-            </div> -->
-            <div class="" style="padding: 2.5rem">
+        <div class="second-part custom-family-font" style="padding: 2.5rem 0rem 5rem 0">
+            <div class="container">
                 <div class="text-center">
-                    <p class="mulish-font text-colour why-insurance font-weight-bold"
+                    <p class="custom-family-font text-colour why-insurance font-weight-bold"
                         style="font-size: 36px; line-height: 56px;">
                         Why do you need
                         additional insurance?
                     </p>
                     <hr>
                     <div class="mx-auto w-60 ">
-                        <p class="" style="font-size: 25px; line-height: 30px;">
+                        <p class="why-insurance-text" style="font-size: 25px; line-height: 30px;">
                             How does your personal insurance complement your already existing employer-sponsored cover?
                         </p>
                     </div>
@@ -618,9 +636,9 @@
                             </div>
                         </div>
                         <!-- </div>
-
-
-                    <div class="row"> -->
+    
+    
+                        <div class="row"> -->
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
                             <div class="card d-flex mx-auto h-100 advantage-card">
                                 <div class="card-body d-flex w-100 mt-auto flex-column">
@@ -664,35 +682,30 @@
             </div>
         </div>
 
-
-        <div class="third-part  mulish-font">
-            <!-- <div class="right-img">
-                <img src="https://botbuilder.engagely.ai/dmp_backend/blue-right-landing.png" alt="">
-            </div> -->
-            <div class="" style="padding: 2.5rem">
+        <div class="third-part custom-family-font" style="padding: 2.5rem 0rem 5rem 0">
+            <div class="container">
                 <div class="text-center">
-                    <p class="mulish-font text-colour font-weight-bold more-about-marsh"
+                    <p class="custom-family-font text-colour font-weight-bold more-about-marsh"
                         style="font-size: 36px; line-height: 56px;">Know
                         More About the
                         "Marsh Advantage"
                     </p>
                     <hr>
                     <div class="mx-auto w-60">
-                        <p style="font-size: 25px; line-height: 30px;">
+                        <p class="more-about-marsh-text" style="font-size: 25px; line-height: 30px;">
                             Stay covered and stay protected with Marsh. Our insurance experts will help you select the
                             best voluntary insurance plans in the market.
                         </p>
                     </div>
                 </div>
                 <div class="third-page-display">
-
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
                             <div class="card border-0 d-flex flex-column h-100 justify-content-center">
                                 <div
-                                    class="card-body text-center d-flex w-100 justify-content-center mt-auto flex-column">
+                                    class="card-body text-center d-flex w-100 justify-content-center mt-auto flex-column advantage-card-marsh">
                                     <img class="mx-auto" src="image/advantagecup.svg" class="">
-                                    <div class="font-weight-bold mx-auto w-75 pt-3"
+                                    <div class="font-weight-bold mx-auto w-75 pt-3 advantage-marsh-text"
                                         style="font-size: 35px; line-height: 40px;">
                                         Your Advantage,<br> <span class="text-colour">Marsh Advantage</span>
                                     </div>
@@ -728,9 +741,9 @@
                             </div>
                         </div>
                         <!-- </div>
-
-
-                    <div class="row"> -->
+    
+    
+                        <div class="row"> -->
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
                             <div class="card third-card-border d-flex flex-column h-100 justify-content-center">
                                 <img src="image/changeOkay.svg" class="card-img-top img-fluid"
@@ -780,7 +793,8 @@
                 </div>
             </div>
         </div>
-        <div class="forth-part mulish-font " style="padding: 2.5rem 0px">
+
+        <div class="forth-part custom-family-font " style="padding: 2.5rem 0px">
             <div class="container">
                 <div class="mb-4 img-div">
                     <img class="marsh-logo" src="image/marsh-logo.svg" alt="">
@@ -797,30 +811,25 @@
             </div>
         </div>
 
-        <div class="fifth-part mulish-font" style="padding: 2.5rem 0px">
+        <div class="fifth-part custom-family-font" style="padding: 2.5rem 0px">
             <div class="container">
-                <!-- <div class="my-5">
-                    <img src="image/marsh-logo.svg" alt="">
-                </div> -->
                 <div class="text-size" style="font-size: 16px; line-height: 22px; font-weight: 400;">
                     <p>
                         <span class="font-weight-bold pr-1">Disclaimer</span>: Marsh India Insurance Brokers Pvt Ltd is
-                        a
-                        joint venture between Marsh International
-                        Holdings Inc. and its Indian partners. Marsh is one of the Marsh & McLennan Companies, together
-                        with Guy Carpenter, Mercer and Oliver Wyman. This document is not intended to be taken as advice
-                        regarding any individual situation and should not be relied upon as such. The information
-                        contained herein is based on sources we believe reliable, but we make no representation or
-                        warranty as to its accuracy.
+                        a joint venture between Marsh International Holdings Inc. and its Indian partners. Marsh is one
+                        of the Marsh & McLennan Companies, together with Guy Carpenter, Mercer and Oliver Wyman. Marsh
+                        India Insurance Brokers Pvt Ltd makes no claims, promises or guarantees about the accuracy,
+                        completeness, or adequacy of the contents of the webpage or chatbot and expressly disclaims
+                        liability for errors and omissions in the same.
                     </p>
                     <p>
-                        Marsh shall have no obligation to update this publication and shall have no liability to you or
-                        any other party arising out of this publication or any matter contained herein. Any modeling,
+                        Marsh shall have no obligation to update this webpage and shall have no liability to you or any
+                        other party arising out of this publication or any matter contained herein. Any modeling,
                         analytics, or projections are subject to inherent uncertainty, and the Marsh Analysis could be
                         materially affected if any underlying assumptions, conditions, information, or factors are
                         inaccurate or incomplete or should change. Insurance is the subject matter of the solicitation.
                         For more details on risk factors, terms and conditions please read sales brochure carefully
-                        before concluding a sale.
+                        before concluding a sale. Tax benefits are subject to changes in applicable tax laws.
                     </p>
                     <p>
                         Prohibition of Rebates - Section 41 of the Insurance Act, 1938; as amended from time to time: No
@@ -841,8 +850,7 @@
                         valid from 03/03/2021 to 02/03/2024. CIN: U66010MH2002PTC138276.
                     </p>
                     <p class="mb-0">
-                        Copyright 2018 Marsh India Insurance Brokers Pvt Ltd. All rights reserved.
-
+                        Copyright 2021 Marsh India Insurance Brokers Pvt Ltd. All rights reserved.
                     </p>
                 </div>
             </div>
