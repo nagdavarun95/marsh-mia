@@ -17,6 +17,20 @@
     <script>setTimeout(function () { var e, t; e = document, (t = e.createElement("script")).type = "text/javascript", t.async = !0, t.setAttribute("data-botid", "JjV98lo_w02q"), t.src = "https://botbuilder.engagely.ai/engagelyscripts/engagely_bots.js?v=" + Date.parse(new Date()), e.getElementsByTagName("body")[0].appendChild(t) }, 1000);</script>
 
     <style>
+        @font-face {
+            font-family: 'Slate Pro';
+            src: local('Slate Pro Regular'), local('Slate-Pro-Regular'),
+                url("./image/SlatePro.woff2") format("woff2"),
+                url("./image/SlatePro.woff") format("woff"),
+                url("./image/SlatePro.ttf") format("truetype");
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .custom-family-font {
+            font-family: "Slate Pro", sans-serif !important;
+        }
+
         .form-control {
             height: 35px !important;
         }
@@ -85,9 +99,6 @@
             background-color: #002C77;
         }
 
-        .custom-family-font {
-            font-family: "Noto Sans", sans-serif !important;
-        }
 
         .grey-text-color {
             color: #7D7987;
@@ -146,16 +157,16 @@
         .card-headtext-one {
             position: absolute;
             /* padding: 1rem; */
-            top: 30%;
-            width: 75%;
+            top: 45%;
+            /* width: 75%; */
             line-height: 40px;
         }
 
         .card-headtext-two {
             position: absolute;
             /* padding: 1rem; */
-            top: 25%;
-            width: 75%;
+            top: 40%;
+            /* width: 75%; */
             line-height: 40px;
         }
 
@@ -178,13 +189,17 @@
             padding: 1.5rem !important;
         }
 
+        .third-part .third-page-display .card-body .advantage-marsh-text {
+            width: 100% !important;
+        }
+
         @media (max-width: 1360px) {
             .card-body {
                 min-height: 1px !important;
             }
 
             .card-body.third-card {
-                min-height: 135px !important;
+                min-height: 1px !important;
             }
 
             .w-60 {
@@ -206,24 +221,32 @@
             }
 
             .card-headtext-one {
-                top: 20%;
-                width: 80%;
+                top: 25%;
+                /* width: 80%; */
             }
 
             .card-headtext-two {
-                top: 15%;
+                top: 35%;
             }
+
+
 
         }
 
         @media (max-width: 991px) {
             .card-headtext-two.mobile-change {
-                width: 55%;
+                /* width: 55%; */
+                top: 45%
             }
 
             .card-headtext-two,
             .card-headtext-one {
-                width: 70%;
+                top: 40%
+                    /* width: 70%; */
+            }
+
+            .third-part .third-page-display .card-body .advantage-marsh-text {
+                width: 75% !important;
             }
         }
 
@@ -231,14 +254,16 @@
 
             .card-headtext-two.mobile-change,
             .card-headtext-one {
-                width: 75%;
-                top: 30%
+                /* width: 75%; */
+                top: 45%
             }
 
             .card-headtext-two {
-                width: 75%;
-                top: 25%
+                /* width: 75%; */
+                top: 40%
             }
+
+
         }
 
         @media (max-width: 720px) {
@@ -384,6 +409,7 @@
                 font-size: 20px !important;
                 line-height: 26px !important;
                 padding-top: 0px !important;
+                width: 100% !important;
             }
 
             .third-part .third-page-display .card-title .card-headtext-one {
@@ -515,14 +541,8 @@
                     <p class="text-colour font-weight-bold custom-family-font mt-5 mobile-family-font mb-0"
                         style="font-size: 36px; line-height: 42px; font-weight: 700;">Specially curated insurance
                         products for you & your family</p>
-                    <div style="font-size:26px; line-height: 55px;"
-                        class="text-colour custom-family-font mobile-family-font-desc">
-                        ...complementing your company-provided cover</div>
                     <p class="custom-family-font my-4 font-weight-bold mobile-bot-font"
-                        style="font-size: 25px; line-height: 26px;">
-                        <span class="arrow-bg"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Click
-                        or tap
-                        on the MIA bot icon on the bottom right of your screen to begin your insurance journey
+                        style="font-size: 25px; line-height: 26px;">Click on the bot icon to continue your journey...
                     </p>
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 h-auto responsive-margin">
@@ -699,10 +719,10 @@
                                     class="card-img-top img-fluid d-xl-block d-lg-block d-md-block d-sm-block d-none"
                                     alt="Top-up plans for Family">
                                 <span class="card-title text-colour card-headtext-one pr-3 py-3 pl-4 font-weight-bold"
-                                    style="font-size: 35px;">Right
+                                    style="font-size: 27px; line-height:35px">Right
                                     here, Right now</span>
                                 <div class="card-body  third-card pr-3 py-3 pl-4 d-flex w-100  mt-auto flex-column">
-                                    <p class="card-text" style="font-size:22px; line-height: 25px;">We
+                                    <p class="card-text" style="font-size:18px; line-height: 22px;">We
                                         will help you in choosing the right product, decode the policy terms &
                                         conditions & assist in buying the policy</p>
                                 </div>
@@ -714,10 +734,10 @@
                                     class="card-img-top img-fluid d-xl-block d-lg-block d-md-block d-sm-block d-none"
                                     alt="Covid Insurance">
                                 <span class="card-title text-colour card-headtext-one pr-3 py-3 pl-4 font-weight-bold"
-                                    style="font-size: 35px;">Renew &
+                                    style="font-size: 27px; line-height:35px">Renew &
                                     Enjoy</span>
                                 <div class="card-body  third-card pr-3 py-3 pl-4 d-flex w-100 mt-auto flex-column">
-                                    <p class="card-text" style="font-size:22px; line-height: 25px;">We
+                                    <p class="card-text" style="font-size:18px; line-height: 22px;">We
                                         will connect with you via call/e-mail for renewal of your policy & help you
                                         continue the benefits</p>
                                 </div>
@@ -732,10 +752,10 @@
                                     alt="Top-up plans for Family">
                                 <span
                                     class="card-title text-colour card-headtext-two pr-3 py-3 pl-4 font-weight-bold mobile-change"
-                                    style="font-size: 35px;">Change
+                                    style="font-size: 27px; line-height:35px">Change
                                     is okay</span>
                                 <div class="card-body  third-card pr-3 py-3 pl-4 d-flex w-100  mt-auto flex-column">
-                                    <p class="card-text" style="font-size:22px; line-height: 25px;">We
+                                    <p class="card-text" style="font-size:18px; line-height: 22px;">We
                                         will be available for you in case you need to make any changes or rectifications
                                         in the policy</p>
                                 </div>
@@ -747,10 +767,10 @@
                                     class="card-img-top img-fluid d-xl-block d-lg-block d-md-block d-sm-block d-none"
                                     alt="Top-up plans for Family">
                                 <span class="card-title text-colour card-headtext-two pr-3 py-3 pl-4 font-weight-bold"
-                                    style="font-size: 35px;">Unhappy
+                                    style="font-size: 27px; line-height:35px">Unhappy
                                     to Happy </span>
                                 <div class="card-body  third-card pr-3 py-3 pl-4 d-flex w-100  mt-auto flex-column">
-                                    <p class="card-text" style="font-size:22px; line-height: 25px;">
+                                    <p class="card-text" style="font-size:18px; line-height: 22px;">
                                         While there will be no reason to complain, in case you are unhappy about
                                         anything, we will handle the escalations/complaints related to services or any
                                         other aspect related to your policy</p>
@@ -763,10 +783,10 @@
                                     class="card-img-top img-fluid d-xl-block d-lg-block d-md-block d-sm-block d-none"
                                     alt="Top-up plans for Family">
                                 <span class="card-title text-colour card-headtext-two pr-3 py-3 pl-4 font-weight-bold"
-                                    style="font-size: 35px;">Hold
+                                    style="font-size: 27px; line-height:35px">Hold
                                     your Hand</span>
                                 <div class="card-body  third-card pr-3 py-3 pl-4 d-flex w-100  mt-auto flex-column">
-                                    <p class="card-text" style="font-size:22px; line-height: 25px;">We
+                                    <p class="card-text" style="font-size:18px; line-height: 22px;">We
                                         will guide you/your family through the every step of the claim process. You will
                                         get contact details of Marsh representative who will assist end to end from
                                         Diagnosis to Recovery</p>
